@@ -7,6 +7,8 @@
     <title>Les Vélos | My info</title>
 </head>
 <style>
+    #CS{
+        display : none;}
      body{
     background-image: url(https://wallpaperaccess.com/full/1223017.jpg);
     background-size: cover;
@@ -87,8 +89,8 @@
     </div>
     </header>
 <body>
-   <ul> <li><button id="checkstatus">Check Status</button></li>
-    <li><button id="previous">Previous Bookings</button></li>
+   <ul> <li><button id="checkstatus" onclick="l()">Check Status</button></li>
+    <li><button id="previous" onclick="f()">Previous Bookings</button></li>
     </ul>
     <p id="previouspara">
         <table style="width:100%">
@@ -112,9 +114,47 @@
             </tr>
           </table>
     </p>
-    <div id="CS"> Your Transaction ID: <input type="text" name="" id="tag">
-        <input type="submit" name="Submit Now">
-    </div>
+    <p id="CS"> Your Transaction ID: <input type="text" name="" id="tag">
+        <button id="sub" onclick="n()">submit</button>
+    </p>
     
 </body>
+<script>
+  function l(){
+            let CS=document.getElementById("CS")
+            let previouspara=document.getElementById("previouspara")
+let checkstatus=document.getElementById("checkstatus")
+previouspara.style.display='none'
+if(CS.style.display!='none'){
+    CS.style.display='none';
+}
+else{
+    CS.style.display='block';
+}
+  }
+  function f(){
+            let CS=document.getElementById("signup")
+            let previouspara=document.getElementById("signin")
+let previous=document.getElementById("previous")
+CS.style.display='none'
+if(previouspara.style.display!='none'){
+    previouspara.style.display='none';
+}
+else{
+    previouspara.style.display='block';
+}
+}
+function n(){
+  let sub=document.getElementById("sub")
+  alert("You will receive a mail shortly. Thank you. ")
+
+
+
+}
+
+
+
+
+</script>
+
 </html>
