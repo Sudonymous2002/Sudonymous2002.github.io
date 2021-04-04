@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Vélos | Sign in </title>
+    <link rel="icon" href="logo.jpeg" sizes="16x16">
+</head>
+<style>
+    body{
+    background-image: url(https://wallpaperaccess.com/full/1223017.jpg);
+    background-size: cover;
+    }
+    p{
+    display: none;
+    }
+    ul{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    li{
+      display: inline;
+    }
+    #CName{
+      font-family: 'garamond';
+      text-align: center;
+      background: transparent;
+      /* margin-right: 250px; */
+      font-size: 100px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    button{
+      color: rgb(12, 100, 12);
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      font-weight: bold;
+      width: 200px;
+      height: 50px;
+      padding: 5px;
+      margin-right: 40px;
+      background: transparent;
+      transition-duration: 0.4s;
+    }
+    button:hover{
+      background-image: url(https://wallpapercave.com/wp/wp2954634.jpg);
+      background-size: cover;
+      color: black;
+      font-size: 20px;
+    } 
+    #signup, #signin{
+    padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      background: rgb(253, 204, 108, 0.6);
+      font-size: 15px;
+      font-weight: bold;
+      font-variant: small-caps;
+    }
+
+</style>
+<body>
+    <div>
+        <h1 id="CName"><u>Les Vélos</u> </h1>
+      </div>
+    <div id = "all">
+        <ul>
+          <li><a href="Index.html"><button>Home</button></a></li>
+          <li><a href="products.html"><button>Products</button></a></li>
+          <li><a href="FAQ.html"><button>FAQ</button></a></li>
+          <li><a href="signin.html"><button>Sign in/Sign up</button></a></li>
+      </ul> 
+      </div>  
+    
+    <!-- <div>
+        <a href="Home.html"><button>Home</button></a>
+        <a href="products.html"><button>Products</button></a>
+        <a href="bookings.html"><button>Booking</button></a>
+        <a href="FAQ.html"><button>FAQ</button></a>
+        <a href="signin.html"><button>Sign in/Sign up</button></a>
+        <div> -->
+            
+            <div id=""> 
+        <ul>   
+        <li><button id="Sign in" onclick="hide()">Sign in</button></li>
+            <li><button id="Sign up" onclick="hhide()">Sign up </button></li>
+            </ul>
+            </div>
+            <p id="signup">
+                Name: <input type="text" id="name">
+                <br> <br>
+                Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender"> Other
+                <input type="radio" name="myGender">
+                <br> <br>
+                Phone number: <input type="number" id="Phone">
+                <br> <br>
+                <label for="City">City: 
+                    <select name="mycity" id="City">
+                        <option value="Hyderabad" id="hyderabad">Hyderabad</option>
+                        <option value="Mumbai" id="mumbai">Mumbai</option>
+                        <option value="Bengaluru" id="bengaluru">Bengaluru</option>
+
+                    </select>
+                </label>
+                <br> <br>
+                Area: <input type="text" id="Area">
+                <br> <br>
+                Email: <input type="email" id="area" id="email">
+                <br> <br>
+                Aadhar Card: <input type="file" accept="image/*" id="file-input">
+                <br> <br>
+                Password: <input type="password" id="pass">
+                <br> <br>
+                Confirm Password <input type="password" id="pass1">
+                <br> <br>
+                <button id="confirm" onclick="run()">confirm</button>
+                
+
+            </p>
+
+        </div>
+        <p id="signin">
+            Username: <input type="text"  id="us">
+            Password: <input type="password"  id="pa">
+            <br> <br>
+            <button id="confirm1" onclick="run1()">Confirm</button>
+            
+        </p>
+    </div>
+    <script>
+        function hide(){
+            let signup=document.getElementById("signup")
+let signin=document.getElementById("signin")
+let Signin=document.getElementById("Sign in")
+signup.style.display='none'
+if(signin.style.display!='none'){
+    signin.style.display='none'
+}
+else{
+    signin.style.display='block'
+}
+        }
+        function hhide(){
+            let signup=document.getElementById("signup")
+            let signin=document.getElementById("signin")
+let Signup=document.getElementById("Sign up")
+signin.style.display='none'
+if(signup.style.display!='none'){
+    signup.style.display='none';
+}
+else{
+    signup.style.display='block';
+}
+        }
+        function run1(){
+            let confirm1=document.getElementById("confirm1")
+            let us= document.getElementById("us").value
+            let pa=document.getElementById('pa').value
+            if(us==""||pa==""){
+                alert("You haven't entered anything")
+            }
+            else{
+                window.location.replace("bookings.html");
+            
+            }
+        }
+        function run(){
+            let confirm=document.getElementById("confirm")
+            let name= document.getElementById("name").value
+            
+        
+            let pass= document.getElementById("pass").value
+            let pass1= document.getElementById("pass1").value
+            let Area= document.getElementById("Area").value
+            if(name==""||pass==""||pass1==""||Area==""){
+                alert("You haven't entered anything")
+            }
+            else{
+                window.location.replace("bookings.html");
+            }
+
+
+        }
+
+
+
+
+    </script>
+
+</html>

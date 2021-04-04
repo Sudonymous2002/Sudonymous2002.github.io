@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Vélos | Bookings</title>
+    <link rel="icon" href="logo.jpeg" sizes="16x16">
+</head>
+<style>
+    body{
+    background-image: url(https://wallpaperaccess.com/full/1223017.jpg);
+    background-size: cover;
+    }
+    p{
+    display: none;
+    }
+    ul{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    li{
+      display: inline;
+    }
+    #CName{
+      font-family: 'garamond';
+      text-align: right;
+      background: transparent;
+      margin-right: 200px;
+      font-size: 100px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    button{
+      color: darkgreen;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      font-weight: bold;
+      width: 200px;
+      height: 50px;
+      padding: 5px;
+      margin-right: 40px;
+      background: transparent;
+      transition-duration: 0.4s;
+    }
+    button:hover{
+      background-image: url(https://wallpapercave.com/wp/wp2954634.jpg);
+      background-size: cover;
+      color: black;
+      font-size: 20px;
+    } 
+    #signup, #signin{
+    padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      background: rgb(253, 204, 108, 0.6);
+      font-size: 15px;
+      font-weight: bold;
+      font-variant: small-caps;
+    }
+    #book, option{
+      padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      background: rgb(253, 204, 108, 0.6);
+      font-size: 15px;
+      font-weight: bold;
+      font-variant: small-caps;
+    }
+    #booklist{
+        text-align: left;
+    }
+    .list{
+        display: list-item;
+        margin: 10px;
+    }
+    table, th, td {
+  border: 1px solid black;
+}
+
+</style>
+<body>
+    <div>
+        <h1 id="CName">Les Vélos</h1>
+    </div>
+      
+    <div>
+        <ul>
+            <li><a href="Index.html"><button>Home</button></a></li>
+            <li><a href="products.html"><button>Products</button></a></li>
+            <li><a href="FAQ.html"><button>FAQ</button></a></li>
+            <!-- <li><a href="signin.html"><button>Sign in/Sign up</button></a></li> -->
+            <li> <a href="My info.html"><button> My info </button> </a></li>
+        </ul>
+     </div>
+     <div id = "book">
+        <ul id = "booklist">
+        <!-- <li class = "list">
+        <label for="cycle">Type of Bicycle: 
+            <select name="mycycle" id="Cycle">
+                <option value="none" id="none"></option>
+                <option value="Road" id="Road">Road</option>
+                <option value="Mountain" id="Mountain">Mountain</option>
+                <option value="Hybrid" id="Hybrid">Hybrid</option>
+                <option value="Electric" id="Electric">Electric</option>
+            </select>
+        </label>
+        </li> -->
+        <li class="list">
+           Road: Number of cycles <input type="number" min="0" max="10">
+        </li>
+        <li class="list">
+           Mountain: Number of cycles <input type="number" min="0" max="10" >
+        </li>
+        <li class="list">
+           Hybrid: Number of cycles <input type="number" min="0" max="10" >
+        </li>
+        <li class="list">
+           Electric: Number of cycles <input type="number" min="0" max="10">
+        </li>       
+        <li class = "list">
+            <label for="date">Date:
+                <input type="date" id="bookdate" name="bookdate">
+        </li>
+        <li class = "list">
+            <label for="booktime">Select a Time:</label>
+                <input type="time" id="bt" name="bt">
+        </li>
+        <li class="list">
+            Number of hours <input type="number" min="0" max="6">
+         </li> 
+
+        </ul> 
+
+        </label>
+        <table style="width:20%">
+            <tr>
+              <th>Cycle Type</th>
+              <th>Available </th>
+            </tr>
+            <tr>
+              <td>Road</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Mountain</td>
+              <td>27</td>
+            </tr>
+            <tr>
+                <td>Hybrid</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>Electric</td>
+                <td>18</td>
+            </tr>
+          </table>
+     </div>
+<div>
+    
+</div>
+     <br>
+     <div>
+         <a href="payment.html"><button id="submit">Submit</button></a>
+     </div>
+</body>
+    
+        
+</html>

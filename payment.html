@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<style>
+    body{
+    background-image: url(https://wallpaperaccess.com/full/1223017.jpg);
+    background-size: cover;
+  }
+    #CName{
+      font-family: 'garamond';
+      text-align: right;
+      background: transparent;
+      margin-right: 200px;
+      font-size: 100px;
+      margin-top: 20px;
+      padding: 10px;
+    }
+    h2{
+        color: white;
+        border-bottom: 10px double darkgreen;
+    }
+    img{
+        margin-left: 100px;
+    }
+    p{
+      padding: 10px;
+      font-family: 'Times New Roman', Times, serif;
+      background: rgb(253, 204, 108, 0.6);
+      font-size: 15px;
+      font-weight: bold;
+      font-variant: small-caps;
+    }
+    button{
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+      font-weight: bold;
+      width: 200px;
+      height: 50px;
+      padding: 5px;
+      margin-right: 40px;
+      background: transparent;
+      transition-duration: 0.4s;
+    }
+   button:hover{
+      background-image: url(https://wallpapercave.com/wp/wp2954634.jpg);
+      background-size: cover;
+      color: black;
+      font-size: 20px;
+}
+</style>
+<body>
+    <h1 id = "CName">Les Vélos</h1>
+    <h2>Payment</h2>
+    <br>
+    <img src="https://images-eu.ssl-images-amazon.com/images/I/41c9F9wvYIL.png" alt="Bad internet huh" width="300" height="300">
+    <br>
+
+    <p>UPI ID: abcd@okicici</p>
+    <a href="bookings.html"></a><button id="pay" onclick="runnun()">Pay Now</button></body></a>
+</body>
+<script>
+    function runnun(){
+        let a=Math.random() * (100000 - 100000) + 100000
+        let pay = document.getElementById("pay")
+        alert("Congratulations! You have booked a cycle with us! Further details will be sent through email. your transaction id is"+a)
+    }
+</script>
+
+</html>
